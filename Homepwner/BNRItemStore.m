@@ -74,9 +74,6 @@
     item.valueInDollars = [defaults integerForKey:BNRNextItemValuePrefsKey];
     item.itemName = [defaults objectForKey:BNRNextItemNamePrefsKey];
     
-    
-    
-    
     [self.privateItems addObject:item];
     
     return item;
@@ -120,9 +117,5 @@
     
     return [NSKeyedArchiver archiveRootObject:self.privateItems toFile:path];
 }
-
-
-
-
 
 @end
