@@ -34,10 +34,8 @@
 -(instancetype)init
 {
     [NSException raise:@"Singleton" format:@"Use +[BNRItemStore sharedStore]"];
-    
     return nil;
 }
-
 
 -(instancetype)initPrivate
 {
@@ -67,7 +65,6 @@
 -(BNRItem *)createItem
 {
     BNRItem * item = [[BNRItem alloc] init];
-    
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     
