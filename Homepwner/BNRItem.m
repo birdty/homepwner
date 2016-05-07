@@ -16,7 +16,6 @@
     self.containedItem.container = self;
 }
 
-
 -(instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber
 {
     self = [super init];
@@ -32,7 +31,6 @@
         NSString * key = [uuid UUIDString];
         
         _itemKey = key;
-        
     }
     
     return self;
@@ -74,7 +72,6 @@
 {
     return [self itemName];
 }
-
 
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
@@ -133,6 +130,5 @@
     
     UIGraphicsEndImageContext();
 }
-
 
 @end
