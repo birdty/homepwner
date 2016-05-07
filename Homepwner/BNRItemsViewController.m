@@ -312,7 +312,7 @@
 
 +(UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
 {
-    return [[self alloc] init];
+    return [[self alloc] init]; 
 }
 
 @end
